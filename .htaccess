@@ -1,0 +1,65 @@
+RewriteEngine On
+#
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php?url=home [NC,QSA]
+	#--RewriteRule ^([^\/]+)(\/|)$  index.php?url=$1 [QSA]
+RewriteRule ^404$ index.php?url=404 [L,QSA]
+RewriteRule ^s/([^\/]+)(\/|)?$ index.php?url=share&share=$1 [L,QSA]
+RewriteRule ^media/([^\/]+)(\/|)?$ index.php?url=home&media=$1 [L,QSA]
+RewriteRule ^me/([^\/]+)(\/|)?$ index.php?url=feed&page=$1 [L,QSA]
+RewriteRule ^lang/([^\/]+)(\/|)?$ index.php?url=lang&lang=$1 [L,QSA]
+RewriteRule ^page/([^\/]+)(\/|)?$ index.php?url=page&page=$1 [L,QSA]
+#
+#lang
+RewriteRule ^es/$ index.php?lang=es [QSA,L]
+RewriteRule ^en/$ index.php?lang=en [QSA,L]
+RewriteRule ^de/$ index.php?lang=de [QSA,L]
+RewriteRule ^fr/$ index.php?lang=fr [QSA,L]
+RewriteRule ^it/$ index.php?lang=it [QSA,L]
+RewriteRule ^pt/$ index.php?lang=pt [QSA,L]
+RewriteRule ^ru/$ index.php?lang=ru [QSA,L]
+RewriteRule ^tr/$ index.php?lang=tr [QSA,L]
+RewriteRule ^zh/$ index.php?lang=zh [QSA,L]
+#
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^@([^\/]+)(\/|)$  index.php?url=home&media=$1 [QSA]
+#
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z0-9_]+)/([^\/]+)(\/|)$  index.php?url=home&media=$1&type=$2 [QSA]
+#
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\/]+)(\/|)$  index.php?url=home&media=$1 [QSA]
+RewriteRule ^c$ access.php [NC,QSA]
+RewriteRule ^c(.*)$ access.php?url=$1 [NC,QSA]
+RewriteRule ^c(.*)$ pages/$1 [L]
+#
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/opentype
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>

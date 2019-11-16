@@ -1,0 +1,1 @@
+a:3:{s:2:"js";s:31:"player_ias-vflK6rDhN/es_MX/base";s:3:"sts";i:18088;s:5:"steps";s:20:"w70 s2 w47 s2 w31 s1";}

@@ -1,0 +1,48 @@
+/**/
+/*THIS CSS FILE IS SO THAT THE PAGE IS NOT ROTATED BECAUSE THE DESIGN IS NOT FOR SMALL SCREENS*/
+/**/
+@media screen and (max-width: 1024px) {
+	#rotation_m {
+		display: block;
+	}
+}
+@media screen and (min-width: 768px) {
+	#rotation_m {
+		display: none;
+	}
+}
+@media screen and (max-width: 640px) {
+	#rotation_m {
+		display: block;
+	}
+}
+@media screen and (max-width: 600px) {
+	#rotation_m {
+		display: none;
+	}
+}
+@media screen and (max-width: 568px) {
+	#rotation_m {
+		display: block;
+	}
+}
+@media screen and (max-width: 414px) {
+	#rotation_m {
+		display: none;
+	}
+}
+@media screen and (max-width: 375px) {
+	#rotation_m {
+		display: none;
+	}
+}
+@media screen and (max-width: 360px) {
+	#rotation_m {
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	#rotation_m {
+		display: none;
+	}
+}

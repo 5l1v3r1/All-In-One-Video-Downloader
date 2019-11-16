@@ -1,0 +1,221 @@
+#share_modal_url {
+    background: #fff;
+    width: 34em;
+    height: 18em;
+    margin: auto;
+    display: none;
+}
+
+#close_share {
+    font-size: 28px;
+    color: #afafaf;
+    margin-top: 3%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+#title_modal_share {
+}
+
+.class_wall_reds {
+    width: 95%;
+    height: 81%;
+    border-top: 1px solid #eee;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.text_p_wall {
+    font-size: 15px;
+    color: #383434;
+    margin-left: 1em;
+}
+
+#div_red_social {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.img_icons_red {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.class_imput_url {
+    background: #f4f4f4;
+    width: 86%;
+    height: 2em;
+    line-height: 0;
+    padding: 2%;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+}
+
+.div_modal_share_copy {
+    display: flex;
+    margin-top: .1em;
+    margin-bottom: 3%;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.text_imput_p_share {
+    background: #ffffff;
+    width: 78%;
+    padding: 2%;
+    border-radius: 0px;
+    margin-top: 0.6em;
+    font-family: 'Nunito', sans-serif;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #d9dbe6;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    color: #313650;
+}
+
+#copy_yes {
+    background: #4d83ba;
+    width: 1.5em;
+    height: 2em;
+    padding: 0% 0% 0% 0.7%;
+    line-height: 2;
+    color: #fff;
+    border: 1px solid #4d83ba;
+    border-radius: 16px 16px 0px 16px;
+    position: absolute;
+    /* top: 71%; */
+    left: 60%;
+    -webkit-transition: all .7s;
+    -o-transition: all .7s;
+    transition: all .7s;
+    box-shadow: 0 0 4px #0000004f;
+    display: none;
+}
+
+.btn_copy_class {
+    background: #f5f5f5;
+    width: 100px;
+    padding: 1%;
+    /* margin-top: 30em; */
+    font-size: 15px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin: auto;
+    color: #3498db;
+    /* position: absolute; */
+    cursor: pointer;
+    box-shadow: 0px 2px 1px #00000040;
+}
+
+.text_share_span_data_class {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+#content_load_metas_div_modal {
+	margin: auto;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;	
+}
+
+#div_share_css {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    height: 3em;
+    margin: auto;
+    text-align: -webkit-center;
+    /* text-align: center; */
+    margin-bottom: 2%;
+}
+
+.a_class_share_css {
+    background: #ffffff;
+    margin-left: 1%;
+    width: 29em;
+    min-height: 1em;
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.class_share_css {
+    background: #3490dc;
+    width: 98%;
+    height: 2.3em;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    margin: auto;
+    margin-right: 5.1em;
+    border-radius: 3em;
+    line-height: 2.3;
+    text-decoration: none;
+    display: block;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+
+.class_facebook_share {
+    background-color: #6574cd;
+}
+
+.class_facebook_share:hover {
+    background-color: #7886d7;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.class_twitter_share {
+    background-color: #3c91d8;
+}
+
+.class_twitter_share:hover {
+    background-color: #5eaff3;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.class_whatsapp_share {
+    background-color: #38c172;
+}
+
+.class_whatsapp_share:hover {
+    background-color: #53dc8d;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.icon_share_url_video {
+    font-size: 12px;
+    margin-right: 5%;
+}
+
+.text_share_p {
+    margin: auto;
+    width: 80%;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
